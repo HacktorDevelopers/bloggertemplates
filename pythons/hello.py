@@ -7,7 +7,16 @@ class Person():
         if name == self.name:
             self.name = newName
         else:
-            print("Old name is not correct")
+            print("Old name is not correct !")
+
+    def set_pin(self, pin):
+        self.pin = pin
+
+    def changepin(self, old_pin, new_pin):
+        if self.pin == old_pin:
+            self.pin = new_pin
+        else:
+            print("Incorrect pin !")
 
 
 def Main():
