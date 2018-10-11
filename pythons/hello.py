@@ -18,6 +18,11 @@ class Person():
         else:
             print("Incorrect pin !")
 
+    def profile(self):
+        print("Your name is {0} ".format(self.name))
+        print("Your age is {0} ".format(self.age))
+        print("Your pin is {0} ".format(self.pin))
+
 
 def Main():
     print("We are about to create a person")
@@ -33,6 +38,13 @@ def Main():
     newName = input("Input new Name: ")
     newPerson.changeName(oldName, newName)
     print(newPerson.name)
+
+    print("""You are about to set your pin""")
+    pin = input("""Input a 4 digit pin""")
+    newPerson.set_pin(pin)
+
+    print("""Here are your details""")
+    newPerson.profile()
 
 if __name__ == "__main__":
     Main()
