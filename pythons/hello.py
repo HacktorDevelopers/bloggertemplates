@@ -40,7 +40,7 @@ def Main():
     print(newPerson.name)
 
     print("""You are about to set your pin""")
-    pin = input("""Input a 4 digit pin""")
+    pin = input("""Input a 4 digit pin: """)
     newPerson.set_pin(pin)
 
     print("""Here are your details""")
