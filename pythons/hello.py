@@ -24,7 +24,7 @@ class Person():
         print("Your pin is {0} ".format(self.pin))
 
 
-def Main():
+def act():
     print("We are about to create a person")
     name = input("Input Name: ")
     age = input("Input age: ")
@@ -45,6 +45,21 @@ def Main():
 
     print("""Here are your details""")
     newPerson.profile()
+
+options = ["creation", "exit"]
+
+def Main():
+    for i in options:
+        print(i)
+
+    opt = int(input("Choose option: "))
+
+    while opt == 1:
+        act()
+        if opt !=1:
+            print("exiting...")
+            print("exited...")
+            break
 
 if __name__ == "__main__":
     Main()
