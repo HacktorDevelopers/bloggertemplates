@@ -1,11 +1,11 @@
 #   Creating a file editor
 
-#   Function to check if a file is empty
 
+#   Function to check if a file is emptyo
 def file_is_empty(filename):
     lines = open(filename, "r").readlines()
     if len(lines) <= 0:
-        return True
+        return Truer
     else:
         return False
 
@@ -15,11 +15,10 @@ def file_is_empty(filename):
 def write(filename):
     #fname = input("Input file na
     text = input("Write to file:  ")
-    with open(filename, "w+") as f:
+    with open(filename, "w+") as f:9
         byte = f.write(text)
         print("File written")
         print("Number of byte(s) written is {0}.".format(byte))
-
 
 #   Finction to append file
 
@@ -50,13 +49,17 @@ def Main():
             print("Exited!")
     else:
         print("{0} is not empty".format(filename))
-        ask = input("Do you want to read or add to this file?(a/w): ")
+        ask = input("Input r to read\na to append\nw to re-write \nDo you want to read, append or re-write this file?(r/a/w): ")
         if ask == 'r':
             read(filename)
-        if ask == 'a':
-            append(filename)
         else:
-            print("Exited!")
+            if ask == 'a':
+                append(filename)
+            else:
+                if ask == 'w':
+                    write(filename)
+                else:
+                    print("Exited!")
 
 
 if __name__ == "__main__":
