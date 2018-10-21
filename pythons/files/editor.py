@@ -15,7 +15,7 @@ def file_is_empty(filename):
 def write(filename):
     #fname = input("Input file na
     text = input("Write to file:  ")
-    with open(filename, "w") as f:
+    with open(filename, "w+") as f:
         byte = f.write(text)
         print("File written")
         print("Number of byte(s) written is {0}.".format(byte))
@@ -25,8 +25,8 @@ def write(filename):
 
 def append(filename):
     text = input("start to edit file: ")
-    with open(filename, "a") as f:
-        f.append(text)
+    with open(filename, "a+") as f:
+        f.write(text)
         print("File editted!")
 
 
@@ -50,11 +50,11 @@ def Main():
             print("Exited!")
     else:
         print("{0} is not empty".format(filename))
-        ask = input("Do you want to read or re-write file content?(r/w): ")
+        ask = input("Do you want to read or add to this file?(a/w): ")
         if ask == 'r':
             read(filename)
-        if ask == 'w':
-            write(filename)
+        if ask == 'a':
+            append(filename)
         else:
             print("Exited!")
 
