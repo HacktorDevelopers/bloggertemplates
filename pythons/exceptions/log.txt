@@ -2,4 +2,7 @@
 <_io.TextIOWrapper name='log.txt' mode='a+' encoding='UTF-8'>
 <_io.TextIOWrapper name='log.txt' mode='a+' encoding='UTF-8'>
 Error occuredError occured<_io.TextIOWrapper name='log.txt' mode='a+' encoding='UTF-8'>
-Error occured
+Error occuredError occured
+
+<_io.TextIOWrapper name='log.txt' mode='a+' encoding='UTF-8'>
+<_io.TextIOWrapper name='log.txt' mode='a+' encoding='UTF-8'>
