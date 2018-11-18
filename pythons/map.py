@@ -8,6 +8,11 @@ iscore = [22, 10, 16, 30, 10, 25, 35, 20, 4, 11]
 tscore = 40
 print("Initial Score")
 
+def adtoscorse(lis, num):
+    for i in lis:
+        res = list(map(lambda x: x+num, lis))
+        print(res)
+
 num = 1
 
 for i in iscore:
@@ -19,4 +24,4 @@ for i in iscore:
     num += 1
     
     #if ((i/tscore)+100) < 70:
-    #print("This Faied"
+    #print("Thstis Faied"
